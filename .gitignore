@@ -3,3 +3,6 @@
 /instructions/shared
 /AGENTS.md
 /agents-references
+/node_modules
+/dist
+*.tsbuildinfo
