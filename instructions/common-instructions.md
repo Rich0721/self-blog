@@ -12,4 +12,5 @@
 ## Project Framework
 本專案主要使用`React 18`做為前端框架，並搭配`TypeScript`進行開發，使用`Vite`作為專案建構工具。
 此專案不需要使用後端服務，因此不需要使用 API 或伺服器端程式碼。
+需使用`React`與`TypeScript`相關的`Unit Test`套件撰寫對應的測試程式碼，例如`Jest`與`React Testing Library`。
 
