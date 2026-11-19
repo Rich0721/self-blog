@@ -31,10 +31,16 @@ function App() {
   };
 
   return (
-    <>
+    <div
+      onContextMenu={(event) => {
+        if (event.target instanceof HTMLImageElement) {
+          event.preventDefault();
+        }
+      }}
+    >
       <SiteHeader currentPage={page} onNavigate={navigateTo} />
       {page === "notes" ? <NotePage /> : <HomePage />}
-    </>
+    </div>
   );
 }
 

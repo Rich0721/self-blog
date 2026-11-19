@@ -26,7 +26,7 @@ Header包含網站名稱、導航列與GitHub連結。
 
 #### 2-2-1. 業務邏輯說明
 - `自我介紹區塊`的Interface須包含以下欄位
-    - `name`: `Hi, I'mRich`
+    - `name`: `Hi, I'm Rich`
     - `description`: `目前任職於 NEC HK，專注於影像辨識、系統開發與架構設計。曾服務於友達光電與玉山銀行，具備製造業影像演算法開發及金融系統自動化的實務經驗。近期致力於研究 AI Multi-Agent 協同開發框架，探索如何建立涵蓋系統設計、開發、程式碼審查與自動化測試的可驗證開發流程。這裡記錄我的技術研究、實作經驗與學習歷程。`
     - `catchphrase`: `Build. Verify. Improve.`
     - `avatar`: `asserts/images/myself.jpg`
@@ -81,3 +81,6 @@ Header包含網站名稱、導航列與GitHub連結。
     }
 ]
 ```
+
+## III. 其他說明
+- 圖片皆無法讓使用者在線上點擊右鍵保存。

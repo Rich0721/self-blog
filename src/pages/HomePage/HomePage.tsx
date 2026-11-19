@@ -1,5 +1,5 @@
 import Introduction from "../../components/Introduction/Introduction";
-import SkillCard from "../../components/SkillCard/SkillCard";
+import SkillList from "../../components/SkillList/SkillList";
 import type { IntroductionData, Skill } from "../../types/homepage";
 import myselfImage from "../../asserts/images/myself.jpg";
 import backendIcon from "../../asserts/icons/backend.png";
@@ -63,11 +63,7 @@ function HomePage() {
             <p className="skills__eyebrow">WHAT I DO</p>
             <h2 id="skills-title">專長技能</h2>
           </div>
-          <div className="skills__grid">
-            {skills.map((skill) => (
-              <SkillCard key={skill.name} skill={skill} />
-            ))}
-          </div>
+          <SkillList skills={skills} />
         </section>
       </div>
     </main>

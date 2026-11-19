@@ -2,6 +2,12 @@
 
 ## Summary
 
+### TASK-008 Review — 2026-11-19
+
+Status: RESOLVED. PM confirmed image context-menu suppression. App delegates contextmenu and calls preventDefault only for HTMLImageElement targets. All current homepage images, including GitHub and skill icons, are covered. Non-image context menus remain available. No download-prevention guarantee is made.
+
+IMAGE-01 verifies cancellation on all seven homepage images; IMAGE-02 verifies the non-image event is not canceled. npm test: 7 suites / 18 tests passed. npm run build: passed. Review accepted TASK-008; original TASK-001 / TASK-003 browser verification remains pending. Native browser menu behavior was not manually verified in this change.
+
 Implementation was reviewed against `Features/Plan/01-Homepage.md` and the homepage requirement. The initial build check exposed missing Vite asset declarations. Added the Vite client type declaration, installed declared dependencies, and production build now passes. Browser interaction verification could not be completed because the computer-use browser host was unavailable. Static review found the planned route and navigation logic in place.
 
 | Task ID | Issue Date | Status | Description |
@@ -113,3 +119,12 @@ Open `/notes` directly and verify history navigation when browser access is avai
 Status: RESOLVED
 
 Resolution: Source and production build are valid; browser route behavior remains unverified due to unavailable browser access.
+
+
+## Test Implementation Review ? 2026-11-19
+
+TASK-004 through TASK-007: reviewed test discovery, independent fixtures, real component rendering, history cleanup, optional description, skill count boundaries, and production compilation isolation.
+
+Evidence: npm test ? 7 suites, 16 tests passed. npm run build ? passed.
+
+Review limitation: HOME-01 currently follows existing application text `Hi, I'm Rich`, while the requirement document specifies `Hi, I'mRich`. The existing application text was preserved. This discrepancy requires SD/PM resolution before TASK-007 can be accepted as complete requirement compliance. Profile description and per-card exact description assertions also need strengthening to match the full plan. TASK-007 remains REVIEW FIX; TASK-004 through TASK-006 pass review. Browser acceptance remains pending under the original issues.
