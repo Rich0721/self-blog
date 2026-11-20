@@ -1,0 +1,59 @@
+.note-card {
+  display: flex;
+  height: 100%;
+  min-height: 9rem;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0.875rem 1rem;
+  border: 1px solid #e2dfd9;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #262626;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.note-card:hover {
+  border-color: #aaa59d;
+}
+
+.note-card:focus-visible {
+  outline: 2px solid #52644e;
+  outline-offset: 2px;
+}
+
+.note-card__heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.note-card__heading img {
+  flex: none;
+  object-fit: contain;
+}
+
+.note-card h2,
+.note-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.note-card h2 {
+  font-size: 1.0625rem;
+  font-weight: 400;
+}
+
+.note-card__tags,
+.note-card__summary {
+  color: #706d69;
+}
+
+.note-card .note-card__tags {
+  margin-top: 0.25rem;
+  font-size: 0.6875rem;
+}
+
+.note-card__summary {
+  font-size: 0.75rem;
+}
