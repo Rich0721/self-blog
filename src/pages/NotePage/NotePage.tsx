@@ -35,7 +35,7 @@ function NotePage() {
         <input
           type="search"
           aria-label="搜尋筆記"
-          placeholder="搜尋標題、分類或 #標籤"
+          placeholder="搜尋標題或標籤"
           value={query}
           onChange={(event) => handleSearch(event.target.value)}
         />
