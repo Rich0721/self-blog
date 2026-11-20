@@ -1,6 +1,7 @@
 import typescriptIcon from "../../asserts/icons/typescript.png";
 import pythonIcon from "../../asserts/icons/python.png";
 import agentIcon from "../../asserts/icons/software-agent.png";
+import dockerIcon from "../../asserts/icons/docker1.png";
 import type { Note as NoteData } from "../../types/note";
 import "./Note.css";
 
@@ -8,6 +9,7 @@ const categoryIcons = new Map([
   ["typescript", typescriptIcon],
   ["python", pythonIcon],
   ["agent", agentIcon],
+  ["docker", dockerIcon],
 ]);
 
 interface NoteProps {
