@@ -15,5 +15,12 @@ export const notes: readonly Note[] = [
         hashTags: ['#容器化與部署', '#Docker', '#PostgreSQL'],
         summary: '如何使用Docker部署PostgreSQL，並進入容器操作資料庫',
         link:'https://cuddly-baron-1e5.notion.site/II-Docker-PostgreSQL-41eb4b83d16680d2bc67db054778edb0'
+    },
+    {
+        categoryImage: 'agent',
+        title: 'I. 淺談Agent概念',
+        hashTags: ['#Agent'],
+        summary: '介紹Token, Context, MCP與降低Token的工具。',
+        link: 'https://cuddly-baron-1e5.notion.site/I-Agent-421b4b83d166805e9119eaf0e4ca2a9e'
     }
 ];
